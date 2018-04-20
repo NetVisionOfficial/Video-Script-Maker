@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Common</name>
+    <events>
+        <variable constant="0" name="Counter" sid="199676717701469" static="0" type="number">1</variable>
+        <event-block sid="393300532649540">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="598028730051164" type="System" />
+            </conditions>
+            <actions>
+                <action id="10" name="Request fullscreen" sid="860674112740405" type="Browser">
+                    <param id="0" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="106954290310193">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="548990151919866" type="Keyboard">
+                    <param id="0" name="Key">27 (Esc)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Close" sid="725768967625141" type="Browser" />
+            </actions>
+        </event-block>
+        <event-block sid="313990771157121">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="912584511810823" type="System">
+                    <param id="0" name="Variable">Counter</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="518867482534155" type="System">
+                    <param id="0" name="Variable">Counter</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

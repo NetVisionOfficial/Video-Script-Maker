@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Splash sheet</name>
+    <events>
+        <include>Common</include>
+        <event-block sid="211135301694393">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="506171011061752" type="System" />
+            </conditions>
+            <actions>
+                <action id="6" name="Set focused" sid="628834061104266" type="TextBox" />
+                <action id="7" name="Set CSS style" sid="313270828916980" type="TextBox">
+                    <param id="0" name="Property name">&quot;font-family&quot;</param>
+                    <param id="1" name="Value">&quot;Arial&quot;</param>
+                </action>
+                <action id="7" name="Set CSS style" sid="242824449984440" type="TextBox">
+                    <param id="0" name="Property name">&quot;font-size&quot;</param>
+                    <param id="1" name="Value">&quot;48pt&quot;</param>
+                </action>
+                <action id="7" name="Set CSS style" sid="943302646464687" type="TextBox">
+                    <param id="0" name="Property name">&quot;color&quot;</param>
+                    <param id="1" name="Value">&quot;#fff&quot;</param>
+                </action>
+                <action id="7" name="Set CSS style" sid="325846838256895" type="CounterField">
+                    <param id="0" name="Property name">&quot;font-family&quot;</param>
+                    <param id="1" name="Value">&quot;Arial&quot;</param>
+                </action>
+                <action id="7" name="Set CSS style" sid="317772632376432" type="CounterField">
+                    <param id="0" name="Property name">&quot;font-size&quot;</param>
+                    <param id="1" name="Value">&quot;38pt&quot;</param>
+                </action>
+                <action id="7" name="Set CSS style" sid="284710200013173" type="CounterField">
+                    <param id="0" name="Property name">&quot;color&quot;</param>
+                    <param id="1" name="Value">&quot;#fff&quot;</param>
+                </action>
+                <action id="7" name="Set CSS style" sid="189338668896908" type="CounterField">
+                    <param id="0" name="Property name">&quot;-webkit-filter&quot;</param>
+                    <param id="1" name="Value">&quot;opacity(0.5)&quot;</param>
+                </action>
+                <action id="7" name="Set CSS style" sid="837881008521842" type="CounterField">
+                    <param id="0" name="Property name">&quot;background&quot;</param>
+                    <param id="1" name="Value">&quot;transparent&quot;</param>
+                </action>
+                <action id="5" name="Set CSS style" sid="631774767539629" type="Anterior">
+                    <param id="0" name="Property name">&quot;-webkit-filter&quot;</param>
+                    <param id="1" name="Value">&quot;opacity(0.5)&quot;</param>
+                </action>
+                <action id="5" name="Set CSS style" sid="436954501243704" type="Anterior">
+                    <param id="0" name="Property name">&quot;color&quot;</param>
+                    <param id="1" name="Value">&quot;#fff&quot;</param>
+                </action>
+                <action id="5" name="Set CSS style" sid="840672646188650" type="Proximo">
+                    <param id="0" name="Property name">&quot;-webkit-filter&quot;</param>
+                    <param id="1" name="Value">&quot;opacity(0.5)&quot;</param>
+                </action>
+                <action id="5" name="Set CSS style" sid="195322816912613" type="Proximo">
+                    <param id="0" name="Property name">&quot;background&quot;</param>
+                    <param id="1" name="Value">&quot;green&quot;</param>
+                </action>
+                <action id="5" name="Set CSS style" sid="831837596399346" type="Proximo">
+                    <param id="0" name="Property name">&quot;color&quot;</param>
+                    <param id="1" name="Value">&quot;#fff&quot;</param>
+                </action>
+                <action id="5" name="Set CSS style" sid="720410811508715" type="Pronto">
+                    <param id="0" name="Property name">&quot;-webkit-filter&quot;</param>
+                    <param id="1" name="Value">&quot;opacity(0.5)&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="785097906968904">
+                    <conditions>
+                        <condition id="3" name="Local key exists" sid="562983062363236" type="WebStorage">
+                            <param id="0" name="Key">&quot;currentpage&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="857818828342773" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="332227434747618" type="System">
+                            <param id="0" name="Variable">Counter</param>
+                            <param id="1" name="Value">WebStorage.LocalValue(&quot;currentpage&quot;)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="613701462476814" type="CounterField">
+                            <param id="0" name="Text">WebStorage.LocalValue(&quot;currentpage&quot;)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="197777341327544">
+                    <conditions>
+                        <condition id="3" name="Local key exists" sid="602364405520824" type="WebStorage">
+                            <param id="0" name="Key">&quot;page_&quot; &amp; Counter</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="830638853381824" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="794789729450793" type="TextBox">
+                            <param id="0" name="Text">WebStorage.LocalValue(&quot;page_&quot; &amp; Counter)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="968849133476689">
+            <conditions>
+                <condition id="0" name="On clicked" sid="995060856447821" type="Anterior" />
+            </conditions>
+            <actions>
+                <action id="3" name="Set enabled" sid="217890008690653" type="Anterior">
+                    <param id="0" name="Mode">0</param>
+                </action>
+                <action id="5" name="Set CSS style" sid="304677034239189" type="Anterior">
+                    <param id="0" name="Property name">&quot;background&quot;</param>
+                    <param id="1" name="Value">&quot;red&quot;</param>
+                </action>
+                <action id="0" name="Set local value" sid="731621083327622" type="WebStorage">
+                    <param id="0" name="Key">&quot;page_&quot; &amp; Counter</param>
+                    <param id="1" name="Value">TextBox.Text</param>
+                </action>
+                <action id="-16" name="Wait" sid="752211537173377" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="938069817941921" type="System">
+                    <param id="0" name="Variable">Counter</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set local value" sid="222986657934262" type="WebStorage">
+                    <param id="0" name="Key">&quot;currentpage&quot;</param>
+                    <param id="1" name="Value">Counter</param>
+                </action>
+                <action id="0" name="Set text" sid="949542149791384" type="CounterField">
+                    <param id="0" name="Text">WebStorage.LocalValue(&quot;currentpage&quot;)</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="580652204129125">
+                    <conditions>
+                        <condition id="3" name="Local key exists" sid="639300060095473" type="WebStorage">
+                            <param id="0" name="Key">&quot;page_&quot; &amp; Counter</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="263714624892962" type="System">
+                            <param id="0" name="Seconds">0.4</param>
+                        </action>
+                        <action id="0" name="Set text" sid="855604405322744" type="TextBox">
+                            <param id="0" name="Text">WebStorage.LocalValue(&quot;page_&quot; &amp; Counter)</param>
+                        </action>
+                        <action id="3" name="Set enabled" sid="763919970675706" type="Anterior">
+                            <param id="0" name="Mode">1</param>
+                        </action>
+                        <action id="5" name="Set CSS style" sid="219485234472747" type="Anterior">
+                            <param id="0" name="Property name">&quot;background&quot;</param>
+                            <param id="1" name="Value">&quot;green&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="820321829868856">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="512209389479246" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="408135244749130" type="System">
+                            <param id="0" name="Seconds">0.4</param>
+                        </action>
+                        <action id="0" name="Set text" sid="523341442237653" type="TextBox">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="3" name="Set enabled" sid="121386560807005" type="Anterior">
+                            <param id="0" name="Mode">1</param>
+                        </action>
+                        <action id="5" name="Set CSS style" sid="828059963054997" type="Anterior">
+                            <param id="0" name="Property name">&quot;background&quot;</param>
+                            <param id="1" name="Value">&quot;green&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="783268829688327">
+            <conditions>
+                <condition id="0" name="On clicked" sid="797435117435104" type="Proximo" />
+            </conditions>
+            <actions>
+                <action id="3" name="Set enabled" sid="482330821330313" type="Proximo">
+                    <param id="0" name="Mode">0</param>
+                </action>
+                <action id="5" name="Set CSS style" sid="628768260872745" type="Proximo">
+                    <param id="0" name="Property name">&quot;background&quot;</param>
+                    <param id="1" name="Value">&quot;red&quot;</param>
+                </action>
+                <action id="0" name="Set local value" sid="905680810882129" type="WebStorage">
+                    <param id="0" name="Key">&quot;page_&quot; &amp; Counter</param>
+                    <param id="1" name="Value">TextBox.Text</param>
+                </action>
+                <action id="-16" name="Wait" sid="250386464479157" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="-10" name="Add to" sid="578872132503657" type="System">
+                    <param id="0" name="Variable">Counter</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set local value" sid="508206126466951" type="WebStorage">
+                    <param id="0" name="Key">&quot;currentpage&quot;</param>
+                    <param id="1" name="Value">Counter</param>
+                </action>
+                <action id="0" name="Set text" sid="245960896007443" type="CounterField">
+                    <param id="0" name="Text">WebStorage.LocalValue(&quot;currentpage&quot;)</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="552594855852559">
+                    <conditions>
+                        <condition id="3" name="Local key exists" sid="115229940676173" type="WebStorage">
+                            <param id="0" name="Key">&quot;page_&quot; &amp; Counter</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="679804791748187" type="System">
+                            <param id="0" name="Seconds">0.4</param>
+                        </action>
+                        <action id="0" name="Set text" sid="403936201366449" type="TextBox">
+                            <param id="0" name="Text">WebStorage.LocalValue(&quot;page_&quot; &amp; Counter)</param>
+                        </action>
+                        <action id="3" name="Set enabled" sid="903402754893638" type="Proximo">
+                            <param id="0" name="Mode">1</param>
+                        </action>
+                        <action id="5" name="Set CSS style" sid="597759912145013" type="Proximo">
+                            <param id="0" name="Property name">&quot;background&quot;</param>
+                            <param id="1" name="Value">&quot;green&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="236820952136624">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="398284647678057" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="430448827242715" type="System">
+                            <param id="0" name="Seconds">0.4</param>
+                        </action>
+                        <action id="0" name="Set text" sid="211537205091005" type="TextBox">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="3" name="Set enabled" sid="821886861832261" type="Proximo">
+                            <param id="0" name="Mode">1</param>
+                        </action>
+                        <action id="5" name="Set CSS style" sid="864924464432834" type="Proximo">
+                            <param id="0" name="Property name">&quot;background&quot;</param>
+                            <param id="1" name="Value">&quot;green&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="517810226607573">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="765828162718761" type="System">
+                    <param id="0" name="Variable">Counter</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Set enabled" sid="586382517380675" type="Anterior">
+                    <param id="0" name="Mode">0</param>
+                </action>
+                <action id="5" name="Set CSS style" sid="727008447726868" type="Anterior">
+                    <param id="0" name="Property name">&quot;background&quot;</param>
+                    <param id="1" name="Value">&quot;red&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="480072618904800">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="215798686428493" type="System">
+                    <param id="0" name="Variable">Counter</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Set enabled" sid="656552534829146" type="Anterior">
+                    <param id="0" name="Mode">1</param>
+                </action>
+                <action id="5" name="Set CSS style" sid="827173296565695" type="Anterior">
+                    <param id="0" name="Property name">&quot;background&quot;</param>
+                    <param id="1" name="Value">&quot;green&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="186000597480641">
+            <conditions>
+                <condition id="0" name="Compare text" sid="700931162226758" type="TextBox">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                    <param id="1" name="Case">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Set enabled" sid="101016834166033" type="Proximo">
+                    <param id="0" name="Mode">0</param>
+                </action>
+                <action id="7" name="Set CSS style" sid="479585265733337" type="TextBox">
+                    <param id="0" name="Property name">&quot;background&quot;</param>
+                    <param id="1" name="Value">&quot;#fff&quot;</param>
+                </action>
+                <action id="5" name="Set CSS style" sid="236614981612825" type="Proximo">
+                    <param id="0" name="Property name">&quot;background&quot;</param>
+                    <param id="1" name="Value">&quot;red&quot;</param>
+                </action>
+                <action id="0" name="Set local value" sid="926099071909088" type="WebStorage">
+                    <param id="0" name="Key">&quot;mxpage&quot;</param>
+                    <param id="1" name="Value">Counter</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="921825093158554">
+            <conditions>
+                <condition id="-22" name="Else" sid="347112267367594" type="System" />
+            </conditions>
+            <actions>
+                <action id="3" name="Set enabled" sid="197644097996452" type="Proximo">
+                    <param id="0" name="Mode">1</param>
+                </action>
+                <action id="7" name="Set CSS style" sid="138932263936195" type="TextBox">
+                    <param id="0" name="Property name">&quot;background&quot;</param>
+                    <param id="1" name="Value">&quot;transparent&quot;</param>
+                </action>
+                <action id="5" name="Set CSS style" sid="985474078781050" type="Proximo">
+                    <param id="0" name="Property name">&quot;background&quot;</param>
+                    <param id="1" name="Value">&quot;green&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="418667815733679">
+            <conditions>
+                <condition id="1" name="On text changed" sid="872433146623641" type="CounterField" />
+                <condition id="0" inverted="1" name="Compare text" sid="101109729419085" type="CounterField">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                    <param id="1" name="Case">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="708341700105625" type="System">
+                    <param id="0" name="Variable">Counter</param>
+                    <param id="1" name="Value">CounterField.Text</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="229183924670277">
+            <conditions>
+                <condition id="0" name="On clicked" sid="372908529126517" type="Pronto" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="586654602666310" type="System">
+                    <param id="0" name="Layout">View</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

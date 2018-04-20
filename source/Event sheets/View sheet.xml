@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>View sheet</name>
+    <events>
+        <variable constant="0" name="mxpage" sid="287422480463190" static="0" type="number">0</variable>
+        <include>Common</include>
+        <event-block sid="478548585959495">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="411131979438425" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="191916591978223" type="Roteiro">
+                    <param id="0" name="Text">WebStorage.LocalValue(&quot;page_&quot; &amp; Counter)</param>
+                </action>
+                <action id="-9" name="Set value" sid="159953304386220" type="System">
+                    <param id="0" name="Variable">mxpage</param>
+                    <param id="1" name="Value">WebStorage.LocalValue(&quot;mxpage&quot;)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="113480143284623">
+            <conditions>
+                <condition id="0" name="On clicked" sid="651357763296529" type="Retornar" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="285254444195675" type="System">
+                    <param id="0" name="Layout">Splash</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="328475349013495">
+            <conditions>
+                <condition id="3" name="On button released" sid="485596926468864" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="118484394777786" type="System">
+                    <param id="0" name="Variable">Counter</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="375719263451632" type="System">
+                    <param id="0" name="Variable">Counter</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="137002581616317" type="Roteiro">
+                    <param id="0" name="Text">WebStorage.LocalValue(&quot;page_&quot; &amp; Counter)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="600212450973668">
+            <conditions>
+                <condition id="3" name="On button released" sid="450876051592420" type="Mouse">
+                    <param id="0" name="Mouse button">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="383793627782213" type="System">
+                    <param id="0" name="Variable">Counter</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="767923356454633" type="Roteiro">
+                    <param id="0" name="Text">WebStorage.LocalValue(&quot;page_&quot; &amp; Counter)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="819258707669913">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="513264317812736" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="753463579508391" type="Counter2">
+                    <param id="0" name="Text">Counter</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
