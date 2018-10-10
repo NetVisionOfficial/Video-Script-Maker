@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Splash sheet</name>
     <events>
-        <variable constant="0" name="save" sid="854926931150915" static="0" type="number">0</variable>
+        <variable constant="0" name="event" sid="854926931150915" static="0" type="number">0</variable>
         <include>Common</include>
         <event-block sid="211135301694393">
             <conditions>
@@ -368,36 +368,130 @@
                 <condition id="0" name="On clicked" sid="372908529126517" type="Pronto" />
             </conditions>
             <actions>
-                <action id="-2" name="Go to layout" sid="586654602666310" type="System">
-                    <param id="0" name="Layout">View</param>
+                <action id="-9" name="Set value" sid="958542902684331" type="System">
+                    <param id="0" name="Variable">mxpage</param>
+                    <param id="1" name="Value">Counter</param>
+                </action>
+                <action id="-9" name="Set value" sid="458519722961139" type="System">
+                    <param id="0" name="Variable">event</param>
+                    <param id="1" name="Value">1</param>
                 </action>
             </actions>
-        </event-block>
-        <event-block disabled="1" sid="697547794509511">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="890147687099583" type="System">
-                    <param id="0" name="Variable">Counter</param>
-                    <param id="1" name="Comparison">5</param>
-                    <param id="2" name="Value">1</param>
-                </condition>
-            </conditions>
-            <actions />
             <sub-events>
-                <event-block disabled="1" sid="360300320213589">
+                <event-block sid="981685008266855">
                     <conditions>
-                        <condition id="-23" name="While" sid="248465854904462" type="System" />
-                        <condition id="-14" name="Compare variable" sid="740278179170579" type="System">
-                            <param id="0" name="Variable">save</param>
-                            <param id="1" name="Comparison">5</param>
-                            <param id="2" name="Value">0</param>
+                        <condition id="-14" name="Compare variable" sid="165925481020104" type="System">
+                            <param id="0" name="Variable">event</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
                         </condition>
+                        <condition id="-4" name="Trigger once while true" sid="696514377526329" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-10" name="Add to" sid="568905933130415" type="System">
-                            <param id="0" name="Variable">save</param>
+                        <action id="-9" name="Set value" sid="213869816560963" type="System">
+                            <param id="0" name="Variable">Counter</param>
                             <param id="1" name="Value">1</param>
                         </action>
+                        <action id="-16" name="Wait" sid="987420500722293" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="578410468361921" type="System">
+                            <param id="0" name="Variable">event</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="932597366644519">
+                            <conditions>
+                                <condition id="-12" name="Repeat" sid="841711505505249" type="System">
+                                    <param id="0" name="Count">mxpage</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Append HTML" sid="288566769539824" type="HTMLIFrame">
+                                    <param id="0" name="Append HTML">&quot;&lt;page id=&apos;&quot; &amp; Counter &amp; &quot;&apos;&gt;&quot; &amp; WebStorage.LocalValue(&quot;page_&quot; &amp; Counter) &amp; &quot;&lt;/page&gt;&quot;</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="260435478305847" type="System">
+                                    <param id="0" name="Variable">Counter</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="222844935285550">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="377804867307968" type="System">
+                                    <param id="0" name="First value">Counter</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Second value">mxpage</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="442781827099899">
+                                    <conditions>
+                                        <condition id="6" name="Path exists" sid="184097222803467" type="Electron">
+                                            <param id="0" name="Path">Electron.GetDocumentsPath &amp; &quot;/Video Script Maker/scripts&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="664426897855794" type="System">
+                                            <param id="0" name="Variable">event</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="934584203165673">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="866478915453980" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="17" name="Create folder" sid="707571306637117" type="Electron">
+                                            <param id="0" name="Path">Electron.GetDocumentsPath &amp; &quot;/Video Script Maker&quot;</param>
+                                        </action>
+                                        <action id="17" name="Create folder" sid="220546712820243" type="Electron">
+                                            <param id="0" name="Path">Electron.GetDocumentsPath &amp; &quot;/Video Script Maker/scripts&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="140812522416835" type="System">
+                                            <param id="0" name="Variable">event</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="514721081973034">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="149687597459462" type="System">
+                                            <param id="0" name="Variable">event</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                        <condition id="-4" name="Trigger once while true" sid="582109405556746" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Write" sid="855036426683796" type="Electron">
+                                            <param id="0" name="Tag">&quot;&quot;</param>
+                                            <param id="1" name="Path">Electron.GetDocumentsPath &amp; &quot;/Video Script Maker/scripts/&quot; &amp; Title.Text &amp; &quot;.vidscript&quot;</param>
+                                            <param id="2" name="Data">HTMLIFrame.HTML</param>
+                                            <param id="3" name="Encoding Mode">0</param>
+                                        </action>
+                                        <action id="23" name="Copy file" sid="314513339032702" type="Electron">
+                                            <param id="0" name="Path">Electron.GetAppPath &amp; &quot;/www/icon.ico&quot;</param>
+                                            <param id="1" name="Destination">Electron.GetDocumentsPath &amp; &quot;/Video Script Maker&quot;</param>
+                                        </action>
+                                        <action id="23" name="Copy file" sid="352629630538206" type="Electron">
+                                            <param id="0" name="Path">Electron.GetAppPath &amp; &quot;/www/Desktop.ini&quot;</param>
+                                            <param id="1" name="Destination">Electron.GetDocumentsPath &amp; &quot;/Video Script Maker&quot;</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="593852847662214" type="System">
+                                            <param id="0" name="Seconds">1</param>
+                                        </action>
+                                        <action id="-2" name="Go to layout" sid="586654602666310" type="System">
+                                            <param id="0" name="Layout">View</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-block>

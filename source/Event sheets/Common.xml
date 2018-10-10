@@ -10,8 +10,15 @@
                 <condition id="-2" name="On start of layout" sid="598028730051164" type="System" />
             </conditions>
             <actions>
+                <action id="-9" name="Set value" sid="778342938972532" type="System">
+                    <param id="0" name="Variable">fullscreen</param>
+                    <param id="1" name="Value">1</param>
+                </action>
                 <action id="10" name="Request fullscreen" sid="860674112740405" type="Browser">
                     <param id="0" name="Mode">0</param>
+                </action>
+                <action id="8" name="Set Fullscreen" sid="150232752622456" type="Electron">
+                    <param id="0" name="State">0</param>
                 </action>
             </actions>
         </event-block>
@@ -85,6 +92,9 @@
                                     </conditions>
                                     <actions>
                                         <action id="11" name="Cancel fullscreen" sid="605063204480771" type="Browser" />
+                                        <action id="8" name="Set Fullscreen" sid="126485967280490" type="Electron">
+                                            <param id="0" name="State">1</param>
+                                        </action>
                                         <action id="-16" name="Wait" sid="476166704665368" type="System">
                                             <param id="0" name="Seconds">0.1</param>
                                         </action>

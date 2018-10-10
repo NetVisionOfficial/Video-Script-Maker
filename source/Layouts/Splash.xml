@@ -180,6 +180,79 @@
                         <hotspotY>0</hotspotY>
                     </world>
                 </instance>
+                <instance type="HTMLIFrame" uid="16">
+                    <properties>
+                        <id-optional></id-optional>
+                        <class-optional></class-optional>
+                        <initial-visibility>Visible</initial-visibility>
+                        <tooltip></tooltip>
+                        <background></background>
+                        <border></border>
+                        <scroll>Auto</scroll>
+                        <object>HTML</object>
+                        <iframe></iframe>
+                        <url></url>
+                        <html></html>
+                        <code></code>
+                        <color></color>
+                        <text-selectable>Yes</text-selectable>
+                        <auto-font-size>Default</auto-font-size>
+                        <import></import>
+                        <css-import></css-import>
+                        <javascript-import></javascript-import>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>54</x>
+                        <y>-398</y>
+                        <z>0</z>
+                        <width>634</width>
+                        <height>326</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                    </world>
+                </instance>
+                <instance type="Title" uid="17">
+                    <properties>
+                        <text></text>
+                        <placeholder>Titulo do roteiro</placeholder>
+                        <tooltip></tooltip>
+                        <initial-visibility>Visible</initial-visibility>
+                        <enabled>Yes</enabled>
+                        <read-only>No</read-only>
+                        <spell-check>No</spell-check>
+                        <type>Text</type>
+                        <auto-font-size>No</auto-font-size>
+                        <id-optional></id-optional>
+                        <customizations></customizations>
+                        <background-color>255,255,255</background-color>
+                        <transparent-background>No</transparent-background>
+                        <font>Arial,-16</font>
+                        <font-color>0,0,0</font-color>
+                        <borders>Yes</borders>
+                        <top-margin>0</top-margin>
+                        <bottom-margin>0</bottom-margin>
+                        <left-margin>0</left-margin>
+                        <right-margin>0</right-margin>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <select-all-on-focus>No</select-all-on-focus>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>518</x>
+                        <y>408</y>
+                        <z>0</z>
+                        <width>168</width>
+                        <height>42</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
