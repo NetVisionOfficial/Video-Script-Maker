@@ -19,16 +19,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="113480143284623">
-            <conditions>
-                <condition id="0" name="On clicked" sid="651357763296529" type="Retornar" />
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="285254444195675" type="System">
-                    <param id="0" name="Layout">Splash</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="328475349013495">
             <conditions>
                 <condition id="3" name="On button released" sid="485596926468864" type="Mouse">
@@ -44,6 +34,9 @@
                 <action id="-11" name="Subtract from" sid="375719263451632" type="System">
                     <param id="0" name="Variable">Counter</param>
                     <param id="1" name="Value">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="634081878237663" type="System">
+                    <param id="0" name="Seconds">0.1</param>
                 </action>
                 <action id="0" name="Set text" sid="137002581616317" type="Roteiro">
                     <param id="0" name="Text">WebStorage.LocalValue(&quot;page_&quot; &amp; Counter)</param>
@@ -61,6 +54,9 @@
                     <param id="0" name="Variable">Counter</param>
                     <param id="1" name="Value">1</param>
                 </action>
+                <action id="-16" name="Wait" sid="263877507408988" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
                 <action id="0" name="Set text" sid="767923356454633" type="Roteiro">
                     <param id="0" name="Text">WebStorage.LocalValue(&quot;page_&quot; &amp; Counter)</param>
                 </action>
@@ -73,6 +69,16 @@
             <actions>
                 <action id="0" name="Set text" sid="753463579508391" type="Counter2">
                     <param id="0" name="Text">Counter</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="113480143284623">
+            <conditions>
+                <condition id="0" name="On clicked" sid="651357763296529" type="Retornar" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="285254444195675" type="System">
+                    <param id="0" name="Layout">Splash</param>
                 </action>
             </actions>
         </event-block>

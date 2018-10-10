@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Splash sheet</name>
     <events>
+        <variable constant="0" name="save" sid="854926931150915" static="0" type="number">0</variable>
         <include>Common</include>
         <event-block sid="211135301694393">
             <conditions>
@@ -109,6 +110,9 @@
                 <condition id="0" name="On clicked" sid="995060856447821" type="Anterior" />
             </conditions>
             <actions>
+                <action id="-16" name="Wait" sid="175733766445708" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
                 <action id="3" name="Set enabled" sid="217890008690653" type="Anterior">
                     <param id="0" name="Mode">0</param>
                 </action>
@@ -126,6 +130,9 @@
                 <action id="-11" name="Subtract from" sid="938069817941921" type="System">
                     <param id="0" name="Variable">Counter</param>
                     <param id="1" name="Value">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="806210056508664" type="System">
+                    <param id="0" name="Seconds">0.1</param>
                 </action>
                 <action id="0" name="Set local value" sid="222986657934262" type="WebStorage">
                     <param id="0" name="Key">&quot;currentpage&quot;</param>
@@ -185,6 +192,9 @@
                 <condition id="0" name="On clicked" sid="797435117435104" type="Proximo" />
             </conditions>
             <actions>
+                <action id="-16" name="Wait" sid="112995532537254" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
                 <action id="3" name="Set enabled" sid="482330821330313" type="Proximo">
                     <param id="0" name="Mode">0</param>
                 </action>
@@ -202,6 +212,9 @@
                 <action id="-10" name="Add to" sid="578872132503657" type="System">
                     <param id="0" name="Variable">Counter</param>
                     <param id="1" name="Value">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="817001697558702" type="System">
+                    <param id="0" name="Seconds">0.1</param>
                 </action>
                 <action id="0" name="Set local value" sid="508206126466951" type="WebStorage">
                     <param id="0" name="Key">&quot;currentpage&quot;</param>
@@ -359,6 +372,34 @@
                     <param id="0" name="Layout">View</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block disabled="1" sid="697547794509511">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="890147687099583" type="System">
+                    <param id="0" name="Variable">Counter</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block disabled="1" sid="360300320213589">
+                    <conditions>
+                        <condition id="-23" name="While" sid="248465854904462" type="System" />
+                        <condition id="-14" name="Compare variable" sid="740278179170579" type="System">
+                            <param id="0" name="Variable">save</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="568905933130415" type="System">
+                            <param id="0" name="Variable">save</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>
