@@ -1,2 +1,2 @@
+Save scripts as HTML files
 Multiple scripts and menu
-Save scripts as XML files
