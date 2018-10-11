@@ -3,8 +3,8 @@
     <name>Video Script Maker</name>
     <description></description>
     <version>r1</version>
-    <author></author>
-    <author-email></author-email>
+    <author>daniellmesquita</author>
+    <author-email>daniell@zeroid.bit</author-email>
     <author-website>http://</author-website>
     <app-id>com.netvision.videoscriptmaker</app-id>
     <unique-id>2eyvxib8f049e</unique-id>
@@ -128,7 +128,5 @@
             <file name="icon-256.png" />
             <file name="loading-logo.png" />
         </file-folder>
-        <file name="icon.ico" />
-        <file name="Desktop.ini" />
     </files-folder>
 </c2project>
