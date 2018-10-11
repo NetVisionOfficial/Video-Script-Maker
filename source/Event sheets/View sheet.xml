@@ -10,6 +10,13 @@
                 <condition id="-2" name="On start of layout" sid="411131979438425" type="System" />
             </conditions>
             <actions>
+                <action id="-9" name="Set value" sid="201074744390854" type="System">
+                    <param id="0" name="Variable">Counter</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="889984548206355" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
                 <action id="0" name="Set text" sid="191916591978223" type="Roteiro">
                     <param id="0" name="Text">WebStorage.LocalValue(&quot;page_&quot; &amp; Counter)</param>
                 </action>
