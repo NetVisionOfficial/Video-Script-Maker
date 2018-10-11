@@ -16,6 +16,7 @@
         <plugin author="PlayLive" id="HTML_iFrame" version="1.419999957">HTML | iFrame</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
         <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
@@ -96,6 +97,30 @@
         </object-type>
         <object-type name="Title" sid="702428014657502">
             <plugin id="AdvTextBox" />
+        </object-type>
+        <object-type name="menu" sid="233860059599348">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="165249297094119" speed="5">
+                    <frame duration="1" hotspotX="0.516129" hotspotY="0.516129" original-source="C:\Users\Notebook Positivo\Desktop\menu.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="save" sid="562892632195540">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="134018469678703" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Notebook Positivo\Desktop\save.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="saveas" sid="690707091483660">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="684120519355140" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Notebook Positivo\Desktop\saveas.png" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
