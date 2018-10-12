@@ -1,0 +1,6 @@
+This file shows the Namecoin's transaction ID containing the hash of previous commit. It is for registering/copyright purposes.
+Namecoin transaction ID with previous commit(s) hash(es): 
+f5a19c2e3253efe44d4ac53dd2bccc6bbdf973cd524f1af8b96408f009e3cb96
+Address/Name/Domain: videoscriptmaker.bit
+Owner: Daniell Mesquita
+Namecoin transactions IDs with Ownership proof: dc62447292cd7b987f068b4970bf24891c3a46c6fbf7500d1ce5741e0421df01

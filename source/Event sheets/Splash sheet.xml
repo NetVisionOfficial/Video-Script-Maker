@@ -466,7 +466,7 @@
                                         <event-block sid="442781827099899">
                                             <conditions>
                                                 <condition id="6" name="Path exists" sid="184097222803467" type="Electron">
-                                                    <param id="0" name="Path">Electron.GetAppPath &amp; &quot;/data/scripts&quot;</param>
+                                                    <param id="0" name="Path">Electron.GetAppPath &amp; &quot;/data&quot;</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
@@ -486,6 +486,9 @@
                                                 </action>
                                                 <action id="17" name="Create folder" sid="220546712820243" type="Electron">
                                                     <param id="0" name="Path">Electron.GetAppPath &amp; &quot;/data/scripts&quot;</param>
+                                                </action>
+                                                <action id="17" name="Create folder" sid="997161250640345" type="Electron">
+                                                    <param id="0" name="Path">Electron.GetAppPath &amp; &quot;/data/draft&quot;</param>
                                                 </action>
                                                 <action id="-9" name="Set value" sid="140812522416835" type="System">
                                                     <param id="0" name="Variable">event</param>
