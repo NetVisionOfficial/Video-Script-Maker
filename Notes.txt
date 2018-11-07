@@ -1,7 +1,0 @@
-Load script titles from HTML
-Load scripts as HTML files
-Get rid of LocalStorage for titles
-Multiple scripts and menu
-Autosave
-Draft scripts
-Get rid of LocalStorage for scripts
