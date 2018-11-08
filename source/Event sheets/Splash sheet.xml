@@ -150,16 +150,6 @@
                     <param id="0" name="Variable">Counter</param>
                     <param id="1" name="Value">1</param>
                 </action>
-                <action id="-16" name="Wait" sid="806210056508664" type="System">
-                    <param id="0" name="Seconds">0.1</param>
-                </action>
-                <action id="0" name="Set local value" sid="222986657934262" type="WebStorage">
-                    <param id="0" name="Key">&quot;currentpage&quot;</param>
-                    <param id="1" name="Value">Counter</param>
-                </action>
-                <action id="0" name="Set text" sid="949542149791384" type="CounterField">
-                    <param id="0" name="Text">WebStorage.LocalValue(&quot;currentpage&quot;)</param>
-                </action>
             </actions>
             <sub-events>
                 <event-block sid="580652204129125">
@@ -231,16 +221,6 @@
                 <action id="-10" name="Add to" sid="578872132503657" type="System">
                     <param id="0" name="Variable">Counter</param>
                     <param id="1" name="Value">1</param>
-                </action>
-                <action id="-16" name="Wait" sid="817001697558702" type="System">
-                    <param id="0" name="Seconds">0.1</param>
-                </action>
-                <action id="0" name="Set local value" sid="508206126466951" type="WebStorage">
-                    <param id="0" name="Key">&quot;currentpage&quot;</param>
-                    <param id="1" name="Value">Counter</param>
-                </action>
-                <action id="0" name="Set text" sid="245960896007443" type="CounterField">
-                    <param id="0" name="Text">WebStorage.LocalValue(&quot;currentpage&quot;)</param>
                 </action>
             </actions>
             <sub-events>
@@ -322,6 +302,16 @@
                     <param id="0" name="Property name">&quot;background&quot;</param>
                     <param id="1" name="Value">&quot;green&quot;</param>
                 </action>
+                <action id="-16" name="Wait" sid="416088570228708" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="0" name="Set local value" sid="141025808825088" type="WebStorage">
+                    <param id="0" name="Key">&quot;currentpage&quot;</param>
+                    <param id="1" name="Value">Counter</param>
+                </action>
+                <action id="0" name="Set text" sid="723987105580553" type="CounterField">
+                    <param id="0" name="Text">WebStorage.LocalValue(&quot;currentpage&quot;)</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="186000597480641">
@@ -367,7 +357,7 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="418667815733679">
+        <event-block disabled="1" sid="418667815733679">
             <conditions>
                 <condition id="1" name="On text changed" sid="872433146623641" type="CounterField" />
                 <condition id="0" inverted="1" name="Compare text" sid="101109729419085" type="CounterField">
